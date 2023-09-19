@@ -1,9 +1,7 @@
 try:
-    idade = int(input("Digite a sua idade:"))
-except ValueError as error:
-    print("Erro:",error)
-except Exception as error:
-   print("Aconteceu um erro", error)
-   
-else:
-    print(f"Voce tem {idade} anos")    
+    num_mes = int(input("Digite o numero do mes"))
+    meses = ["janeiro","fevereiro"]
+    mes = meses[num_mes-1]
+    print("o mes é ",mes)
+except:
+    print("Erro: voce precisa digitar um numero")
